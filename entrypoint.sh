@@ -2,6 +2,8 @@
 
 set -e
 
+git config --global --add safe.directory /github/workspace
+
 tw_lines=""  # Lines containing trailing whitespaces.
 
 # TODO (harupy): Check only changed files.
