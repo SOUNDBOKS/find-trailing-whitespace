@@ -6,4 +6,4 @@ WORKDIR ${WORKDIR}
 RUN apk add bash
 COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT bash
+ENTRYPOINT bash /entrypoint.sh
