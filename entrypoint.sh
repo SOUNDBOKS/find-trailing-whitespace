@@ -2,8 +2,6 @@
 
 set -e
 
-cd /find-trailing-whitespace
-
 tw_lines=""  # Lines containing trailing whitespaces.
 
 # TODO (harupy): Check only changed files.
