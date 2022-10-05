@@ -1,9 +1,8 @@
-FROM alpine/git:v2.24.1
+FROM alpine:latest
 
-ENV WORKDIR="/find-trailing-whitespace"
-WORKDIR ${WORKDIR}
+RUN apk add bash git
+RUN git config --global --add safe.directory /github/workspace
 
-RUN apk add bash
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT bash /entrypoint.sh
